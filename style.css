@@ -1,0 +1,103 @@
+* {
+    /* border: 1px solid white; */
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+#wrapper {
+    position: relative;
+    left: 360px;
+    margin-bottom: 0;
+    width:max-content
+}
+#wrapper > #world > .row  {
+    line-height: 0;
+}
+
+/* Style for all the boxes */
+#wrapper > #world > .row > div {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+/* For the brick */
+#wrapper > #world > .row > .brick {
+    background-color: blue;
+}
+/* For the coin */
+#wrapper > #world > .row > .coin {
+    background: url('images/points.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* For the cherry */
+#wrapper > #world > .row > #cherry {
+    background: url('images/cherry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* For the character */
+#wrapper > #character {
+    left: 30px;
+    top: 30px;
+    background: url('images/packman.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+/* For the ghosts */
+        /* ghost 1 */
+#wrapper > #ghost1 {
+    left: 390px;
+    top: 450px;
+    background: url('images/ghost1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}        /* ghost 1 */
+#wrapper > #ghost2 {
+    left: 30px;
+    top: 450px;
+    background: url('images/ghost2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+/* for scores and others */
+.game_details {
+    margin-left: 305px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.game_details > span {
+    font-size: 2rem;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+.game_details > #score{
+    margin-left: 50px;
+    font-size: 4.5rem;
+}
+
+/* .game_details > #points {
+    
+} */
+
+.game_details > #creator {
+    margin-left: 40px;
+}
